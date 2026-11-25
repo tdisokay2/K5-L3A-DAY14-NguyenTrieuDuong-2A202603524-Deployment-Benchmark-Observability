@@ -1,0 +1,444 @@
+{
+  "traceID": "6516d868307869700fa582bd5abdd0c8",
+  "spans": [
+    {
+      "operationName": "agent.retrieve_context",
+      "startTime": 1795609175567760.5,
+      "duration": 20633.916,
+      "tags": [
+        {
+          "key": "error",
+          "value": false
+        }
+      ],
+      "logs": [],
+      "otlp": {
+        "traceId": "6516d868307869700fa582bd5abdd0c8",
+        "spanId": "d61a56e7dd6ca53f",
+        "parentSpanId": "9e23fca7cbd73543",
+        "flags": 256,
+        "name": "agent.retrieve_context",
+        "kind": 1,
+        "startTimeUnixNano": "1795609175567760447",
+        "endTimeUnixNano": "1795609175588394363",
+        "attributes": [
+          {
+            "key": "retrieval.documents",
+            "value": {
+              "intValue": "1"
+            }
+          }
+        ],
+        "status": {}
+      },
+      "resource": {
+        "attributes": [
+          {
+            "key": "agent.version",
+            "value": {
+              "stringValue": "v2"
+            }
+          },
+          {
+            "key": "deployment.environment.name",
+            "value": {
+              "stringValue": "lab"
+            }
+          },
+          {
+            "key": "service.instance.id",
+            "value": {
+              "stringValue": "b92708ef86de"
+            }
+          },
+          {
+            "key": "service.name",
+            "value": {
+              "stringValue": "observable-agent"
+            }
+          },
+          {
+            "key": "service.version",
+            "value": {
+              "stringValue": "1.0.0"
+            }
+          },
+          {
+            "key": "telemetry.sdk.language",
+            "value": {
+              "stringValue": "python"
+            }
+          },
+          {
+            "key": "telemetry.sdk.name",
+            "value": {
+              "stringValue": "opentelemetry"
+            }
+          },
+          {
+            "key": "telemetry.sdk.version",
+            "value": {
+              "stringValue": "1.45.2"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "operationName": "chat mock-llm-small",
+      "startTime": 1795609175588504.2,
+      "duration": 1693958.951,
+      "tags": [
+        {
+          "key": "error",
+          "value": false
+        }
+      ],
+      "logs": [],
+      "otlp": {
+        "traceId": "6516d868307869700fa582bd5abdd0c8",
+        "spanId": "ebcbff5f12069edd",
+        "parentSpanId": "9e23fca7cbd73543",
+        "flags": 256,
+        "name": "chat mock-llm-small",
+        "kind": 1,
+        "startTimeUnixNano": "1795609175588504139",
+        "endTimeUnixNano": "1795609177282463090",
+        "attributes": [
+          {
+            "key": "gen_ai.operation.name",
+            "value": {
+              "stringValue": "chat"
+            }
+          },
+          {
+            "key": "gen_ai.provider.name",
+            "value": {
+              "stringValue": "mock"
+            }
+          },
+          {
+            "key": "gen_ai.request.model",
+            "value": {
+              "stringValue": "mock-llm-small"
+            }
+          },
+          {
+            "key": "gen_ai.usage.input_tokens",
+            "value": {
+              "intValue": "83"
+            }
+          },
+          {
+            "key": "gen_ai.usage.output_tokens",
+            "value": {
+              "intValue": "44"
+            }
+          },
+          {
+            "key": "llm.cost_usd",
+            "value": {
+              "doubleValue": 3.8849999999999996e-05
+            }
+          }
+        ],
+        "status": {}
+      },
+      "resource": {
+        "attributes": [
+          {
+            "key": "agent.version",
+            "value": {
+              "stringValue": "v2"
+            }
+          },
+          {
+            "key": "deployment.environment.name",
+            "value": {
+              "stringValue": "lab"
+            }
+          },
+          {
+            "key": "service.instance.id",
+            "value": {
+              "stringValue": "b92708ef86de"
+            }
+          },
+          {
+            "key": "service.name",
+            "value": {
+              "stringValue": "observable-agent"
+            }
+          },
+          {
+            "key": "service.version",
+            "value": {
+              "stringValue": "1.0.0"
+            }
+          },
+          {
+            "key": "telemetry.sdk.language",
+            "value": {
+              "stringValue": "python"
+            }
+          },
+          {
+            "key": "telemetry.sdk.name",
+            "value": {
+              "stringValue": "opentelemetry"
+            }
+          },
+          {
+            "key": "telemetry.sdk.version",
+            "value": {
+              "stringValue": "1.45.2"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "operationName": "agent.run",
+      "startTime": 1795609175567701.2,
+      "duration": 1714847.424,
+      "tags": [
+        {
+          "key": "error",
+          "value": false
+        }
+      ],
+      "logs": [],
+      "otlp": {
+        "traceId": "6516d868307869700fa582bd5abdd0c8",
+        "spanId": "9e23fca7cbd73543",
+        "parentSpanId": "9c2bf6bc98b42733",
+        "flags": 256,
+        "name": "agent.run",
+        "kind": 1,
+        "startTimeUnixNano": "1795609175567701276",
+        "endTimeUnixNano": "1795609177282548700",
+        "attributes": [
+          {
+            "key": "agent.question.length",
+            "value": {
+              "intValue": "49"
+            }
+          },
+          {
+            "key": "agent.version",
+            "value": {
+              "stringValue": "v2"
+            }
+          }
+        ],
+        "status": {}
+      },
+      "resource": {
+        "attributes": [
+          {
+            "key": "agent.version",
+            "value": {
+              "stringValue": "v2"
+            }
+          },
+          {
+            "key": "deployment.environment.name",
+            "value": {
+              "stringValue": "lab"
+            }
+          },
+          {
+            "key": "service.instance.id",
+            "value": {
+              "stringValue": "b92708ef86de"
+            }
+          },
+          {
+            "key": "service.name",
+            "value": {
+              "stringValue": "observable-agent"
+            }
+          },
+          {
+            "key": "service.version",
+            "value": {
+              "stringValue": "1.0.0"
+            }
+          },
+          {
+            "key": "telemetry.sdk.language",
+            "value": {
+              "stringValue": "python"
+            }
+          },
+          {
+            "key": "telemetry.sdk.name",
+            "value": {
+              "stringValue": "opentelemetry"
+            }
+          },
+          {
+            "key": "telemetry.sdk.version",
+            "value": {
+              "stringValue": "1.45.2"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "operationName": "POST /ask",
+      "startTime": 1795609175516459.5,
+      "duration": 1767101.331,
+      "tags": [
+        {
+          "key": "error",
+          "value": false
+        }
+      ],
+      "logs": [],
+      "otlp": {
+        "traceId": "6516d868307869700fa582bd5abdd0c8",
+        "spanId": "9c2bf6bc98b42733",
+        "flags": 256,
+        "name": "POST /ask",
+        "kind": 2,
+        "startTimeUnixNano": "1795609175516459437",
+        "endTimeUnixNano": "1795609177283560768",
+        "attributes": [
+          {
+            "key": "http.flavor",
+            "value": {
+              "stringValue": "1.1"
+            }
+          },
+          {
+            "key": "http.host",
+            "value": {
+              "stringValue": "172.18.0.4:8000"
+            }
+          },
+          {
+            "key": "http.method",
+            "value": {
+              "stringValue": "POST"
+            }
+          },
+          {
+            "key": "http.route",
+            "value": {
+              "stringValue": "/ask"
+            }
+          },
+          {
+            "key": "http.scheme",
+            "value": {
+              "stringValue": "http"
+            }
+          },
+          {
+            "key": "http.server_name",
+            "value": {
+              "stringValue": "nginx"
+            }
+          },
+          {
+            "key": "http.status_code",
+            "value": {
+              "intValue": "200"
+            }
+          },
+          {
+            "key": "http.target",
+            "value": {
+              "stringValue": "/ask"
+            }
+          },
+          {
+            "key": "http.url",
+            "value": {
+              "stringValue": "http://nginx/ask"
+            }
+          },
+          {
+            "key": "http.user_agent",
+            "value": {
+              "stringValue": "python-requests/2.34.2"
+            }
+          },
+          {
+            "key": "net.host.port",
+            "value": {
+              "intValue": "8000"
+            }
+          },
+          {
+            "key": "net.peer.ip",
+            "value": {
+              "stringValue": "172.18.0.6"
+            }
+          },
+          {
+            "key": "net.peer.port",
+            "value": {
+              "intValue": "50362"
+            }
+          }
+        ],
+        "status": {}
+      },
+      "resource": {
+        "attributes": [
+          {
+            "key": "agent.version",
+            "value": {
+              "stringValue": "v2"
+            }
+          },
+          {
+            "key": "deployment.environment.name",
+            "value": {
+              "stringValue": "lab"
+            }
+          },
+          {
+            "key": "service.instance.id",
+            "value": {
+              "stringValue": "b92708ef86de"
+            }
+          },
+          {
+            "key": "service.name",
+            "value": {
+              "stringValue": "observable-agent"
+            }
+          },
+          {
+            "key": "service.version",
+            "value": {
+              "stringValue": "1.0.0"
+            }
+          },
+          {
+            "key": "telemetry.sdk.language",
+            "value": {
+              "stringValue": "python"
+            }
+          },
+          {
+            "key": "telemetry.sdk.name",
+            "value": {
+              "stringValue": "opentelemetry"
+            }
+          },
+          {
+            "key": "telemetry.sdk.version",
+            "value": {
+              "stringValue": "1.45.2"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

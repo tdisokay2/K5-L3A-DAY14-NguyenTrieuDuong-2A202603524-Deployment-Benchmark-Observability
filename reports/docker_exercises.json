@@ -1,0 +1,79 @@
+{
+  "environment": "Ubuntu WSL2 / Docker Desktop; real containers",
+  "part2_images": [
+    {
+      "tag": "my-agent:develop",
+      "size_bytes": 1667779970,
+      "size_mib": 1590.52,
+      "health": {
+        "status": 200,
+        "body": {
+          "status": "ok",
+          "uptime_seconds": 0.7,
+          "container": true
+        }
+      },
+      "ask": {
+        "status": 200,
+        "body": {
+          "answer": "Agent đang hoạt động tốt! (mock response) Hỏi thêm câu hỏi đi nhé."
+        }
+      }
+    },
+    {
+      "tag": "my-agent:advanced",
+      "size_bytes": 239818989,
+      "size_mib": 228.71,
+      "health": {
+        "status": 200,
+        "body": {
+          "status": "ok",
+          "uptime_seconds": 0.8,
+          "version": "2.0.0",
+          "timestamp": "2026-11-25T08:02:15.721627"
+        }
+      },
+      "ask": {
+        "status": 200,
+        "body": {
+          "answer": "Đây là câu trả lời từ AI agent (mock). Trong production, đây sẽ là response từ OpenAI/Anthropic."
+        }
+      }
+    }
+  ],
+  "reduction_percent": 85.62,
+  "part2_compose": {
+    "health": {
+      "status": 200,
+      "body": {
+        "status": "ok",
+        "uptime_seconds": 1.0,
+        "version": "2.0.0",
+        "timestamp": "2026-11-25T08:02:57.188222"
+      }
+    },
+    "ask": {
+      "status": 200,
+      "body": {
+        "answer": "Agent đang hoạt động tốt! (mock response) Hỏi thêm câu hỏi đi nhé."
+      }
+    }
+  },
+  "part5_scaling": {
+    "requests": 5,
+    "instances_seen": [
+      "instance-78d9c2",
+      "instance-b87a9d",
+      "instance-d0c04d"
+    ],
+    "served_by_sequence": [
+      "instance-b87a9d",
+      "instance-78d9c2",
+      "instance-d0c04d",
+      "instance-b87a9d",
+      "instance-78d9c2"
+    ],
+    "history_count": 10,
+    "storage": "redis"
+  }
+}

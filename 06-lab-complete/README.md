@@ -1,7 +1,32 @@
 # Part 6 — Final Project: Production-ready AI Agent
 
-Bạn tự xây một AI agent đủ chuẩn production từ **bản khung** trong thư mục này, kết hợp mọi thứ đã học ở Part 1–5.
-Mọi file đều đã có sẵn, phần việc của bạn nằm ở các chỗ ghi `TODO`. Bản khung chạy được nhưng **chưa đạt tiêu chí nào**.
+Agent trong thư mục này triển khai các yêu cầu Part 1–5: API key, giới hạn request
+và chi phí dùng Redis, cấu hình từ environment, JSON logging, health/readiness,
+lifespan cleanup và cấu hình Docker/cloud. Xem [MISSION_ANSWERS.md](../MISSION_ANSWERS.md)
+để biết phần đã kiểm tra và giới hạn hiện tại; xem [DEPLOYMENT.md](../DEPLOYMENT.md)
+để xem URL public, cấu hình và bằng chứng deployment.
+
+Kiểm thử hành vi dùng Redis mô phỏng đạt 6/6. Bài chấm đầy đủ trong Ubuntu WSL2
+và Docker Desktop đạt **PASS 12/12 — 43/43 checks passed** ngày 2026-11-25.
+Image được script chấm đo là **273 MiB**; Docker stop kết thúc với exit code 0
+trong **0.7 giây**. Xem [production_ready_full.txt](../reports/production_ready_full.txt).
+Public URL: https://agent-production-a59969e8.up.railway.app
+Public checks passed: 200 / 200 / 401 / 200. See `reports/deployment_checks.json`.
+
+## Development checks
+
+```bash
+# From this directory, using an activated Python virtual environment:
+python -m pip install -r requirements-dev.txt
+python -m pytest tests -q
+python check_production_ready.py --static-only
+```
+
+`tests/` uses fakeredis and is separate from the unchanged grading script.
+Populate an ignored `.env` from `.env.example` with a private `AGENT_API_KEY`
+before using Compose. An empty API key rejects every `/ask` call with 401.
+The budget check runs before the model call; already in-flight calls can exceed
+the recorded spending limit. A real billing cap needs atomic reservations.
 
 Bài chỉ được tính hoàn thành khi script chấm báo **`PASS 12/12`**:
 

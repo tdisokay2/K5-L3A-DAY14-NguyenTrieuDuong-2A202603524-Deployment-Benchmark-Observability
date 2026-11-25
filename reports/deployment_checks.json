@@ -1,0 +1,52 @@
+{
+  "platform": "Railway",
+  "project_id": "360fffa4-6721-42fe-8175-40a876815f51",
+  "dashboard_url": "https://railway.com/project/360fffa4-6721-42fe-8175-40a876815f51",
+  "public_url": "https://agent-production-a59969e8.up.railway.app",
+  "checked_at": "2026-11-25T12:31:44.024727+00:00",
+  "checks": [
+    {
+      "method": "GET",
+      "path": "/health",
+      "authenticated": false,
+      "status": 200,
+      "body": {
+        "status": "ok"
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/ready",
+      "authenticated": false,
+      "status": 200,
+      "body": {
+        "ready": true
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/ask",
+      "authenticated": false,
+      "status": 401,
+      "body": {
+        "detail": "Missing or invalid API key"
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/ask",
+      "authenticated": true,
+      "status": 200,
+      "body": {
+        "question": "Hello",
+        "answer": "Agent đang hoạt động tốt! (mock response) Hỏi thêm câu hỏi đi nhé.",
+        "usage": {
+          "input_tokens": 1,
+          "output_tokens": 16,
+          "cost_usd": 9.75e-06
+        }
+      }
+    }
+  ],
+  "credential_note": "API key generated in memory and stored only as a Railway service variable; values excluded."
+}

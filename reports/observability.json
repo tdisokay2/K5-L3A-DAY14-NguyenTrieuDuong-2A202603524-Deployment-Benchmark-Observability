@@ -1,0 +1,555 @@
+{
+  "environment": "Docker Desktop / Linux containers",
+  "started_at": "2026-11-25T12:10:07.941383+00:00",
+  "promtool_exit_code": 0,
+  "scale_1": {
+    "exit_code": 1,
+    "stats": [
+      {
+        "Type": "POST",
+        "Name": "/ask",
+        "Request Count": "7134",
+        "Failure Count": "70",
+        "Median Response Time": "190",
+        "Average Response Time": "240.1995506711521",
+        "Min Response Time": "86.63428499994552",
+        "Max Response Time": "1878.2622410001295",
+        "Average Content Size": "425.56784412671715",
+        "Requests/s": "59.69523262934703",
+        "Failures/s": "0.5857395968677169",
+        "50%": "190",
+        "66%": "200",
+        "75%": "210",
+        "80%": "210",
+        "90%": "220",
+        "95%": "260",
+        "98%": "1700",
+        "99%": "1700",
+        "99.9%": "1700",
+        "99.99%": "1900",
+        "100%": "1900"
+      },
+      {
+        "Type": "GET",
+        "Name": "/health",
+        "Request Count": "690",
+        "Failure Count": "0",
+        "Median Response Time": "3",
+        "Average Response Time": "5.228740204350525",
+        "Min Response Time": "1.5877270000146382",
+        "Max Response Time": "254.9364499998319",
+        "Average Content Size": "80.0",
+        "Requests/s": "5.7737188834103526",
+        "Failures/s": "0.0",
+        "50%": "3",
+        "66%": "3",
+        "75%": "4",
+        "80%": "4",
+        "90%": "5",
+        "95%": "12",
+        "98%": "36",
+        "99%": "66",
+        "99.9%": "250",
+        "99.99%": "250",
+        "100%": "250"
+      },
+      {
+        "Type": "",
+        "Name": "Aggregated",
+        "Request Count": "7824",
+        "Failure Count": "70",
+        "Median Response Time": "190",
+        "Average Response Time": "219.4774316499233",
+        "Min Response Time": "1.5877270000146382",
+        "Max Response Time": "1878.2622410001295",
+        "Average Content Size": "395.09215235173826",
+        "Requests/s": "65.46895151275739",
+        "Failures/s": "0.5857395968677169",
+        "50%": "190",
+        "66%": "200",
+        "75%": "210",
+        "80%": "210",
+        "90%": "220",
+        "95%": "250",
+        "98%": "1700",
+        "99%": "1700",
+        "99.9%": "1700",
+        "99.99%": "1900",
+        "100%": "1900"
+      }
+    ],
+    "verified_agent_replicas": 1
+  },
+  "dashboard_snapshot": {
+    "captured_at": "2026-11-25T12:29:09.071603+00:00",
+    "p95_seconds": [
+      {
+        "metric": {},
+        "value": [
+          1795609749.08,
+          "0.293220887245841"
+        ]
+      }
+    ],
+    "avg_seconds": [
+      {
+        "metric": {},
+        "value": [
+          1795609749.086,
+          "0.23174892919489387"
+        ]
+      }
+    ],
+    "requests_per_instance": [
+      {
+        "metric": {
+          "instance": "172.18.0.8:8000"
+        },
+        "value": [
+          1795609749.092,
+          "20.81818181818182"
+        ]
+      },
+      {
+        "metric": {
+          "instance": "172.18.0.3:8000"
+        },
+        "value": [
+          1795609749.092,
+          "20.70909090909091"
+        ]
+      },
+      {
+        "metric": {
+          "instance": "172.18.0.9:8000"
+        },
+        "value": [
+          1795609749.092,
+          "20.418181818181818"
+        ]
+      }
+    ],
+    "tokens_per_second": [
+      {
+        "metric": {
+          "type": "input"
+        },
+        "value": [
+          1795609749.096,
+          "5004.636363636363"
+        ]
+      },
+      {
+        "metric": {
+          "type": "output"
+        },
+        "value": [
+          1795609749.096,
+          "2723.1454545454544"
+        ]
+      }
+    ],
+    "errors": [
+      {
+        "metric": {},
+        "value": [
+          1795609749.12,
+          "0.007924860581156443"
+        ]
+      }
+    ]
+  },
+  "scale_3": {
+    "exit_code": 1,
+    "stats": [
+      {
+        "Type": "POST",
+        "Name": "/ask",
+        "Request Count": "7122",
+        "Failure Count": "71",
+        "Median Response Time": "190",
+        "Average Response Time": "242.5427062913497",
+        "Min Response Time": "91.23112999986915",
+        "Max Response Time": "1778.1543670000701",
+        "Average Content Size": "425.7604605447908",
+        "Requests/s": "59.570923246761964",
+        "Failures/s": "0.5938690747711457",
+        "50%": "190",
+        "66%": "200",
+        "75%": "210",
+        "80%": "210",
+        "90%": "220",
+        "95%": "230",
+        "98%": "1700",
+        "99%": "1700",
+        "99.9%": "1700",
+        "99.99%": "1800",
+        "100%": "1800"
+      },
+      {
+        "Type": "GET",
+        "Name": "/health",
+        "Request Count": "739",
+        "Failure Count": "0",
+        "Median Response Time": "3",
+        "Average Response Time": "4.0176291867401766",
+        "Min Response Time": "2.0695999999134074",
+        "Max Response Time": "69.49645600002441",
+        "Average Content Size": "80.0",
+        "Requests/s": "6.181256989519389",
+        "Failures/s": "0.0",
+        "50%": "3",
+        "66%": "3",
+        "75%": "4",
+        "80%": "4",
+        "90%": "5",
+        "95%": "7",
+        "98%": "14",
+        "99%": "26",
+        "99.9%": "69",
+        "99.99%": "69",
+        "100%": "69"
+      },
+      {
+        "Type": "",
+        "Name": "Aggregated",
+        "Request Count": "7861",
+        "Failure Count": "71",
+        "Median Response Time": "190",
+        "Average Response Time": "220.11934641597676",
+        "Min Response Time": "2.0695999999134074",
+        "Max Response Time": "1778.1543670000701",
+        "Average Content Size": "393.2560742908027",
+        "Requests/s": "65.75218023628136",
+        "Failures/s": "0.5938690747711457",
+        "50%": "190",
+        "66%": "200",
+        "75%": "210",
+        "80%": "210",
+        "90%": "220",
+        "95%": "230",
+        "98%": "1700",
+        "99%": "1700",
+        "99.9%": "1700",
+        "99.99%": "1800",
+        "100%": "1800"
+      }
+    ],
+    "verified_agent_replicas": 3
+  },
+  "public_metrics_status": 404,
+  "faults": {
+    "changed_at": "2026-11-25T12:14:34.156978+00:00",
+    "error_rate": 0.2,
+    "slow_rate": 0.3,
+    "first_observed_firing_seconds": {
+      "LLMCostBurnRateHigh": 5.8,
+      "AgentHighErrorRate": 96.1,
+      "AgentHighLatencyP95": 151.3
+    },
+    "poll_interval_seconds": 5,
+    "simultaneously_firing": [
+      {
+        "labels": {
+          "alertname": "AgentHighErrorRate",
+          "severity": "critical"
+        },
+        "annotations": {
+          "description": "Error rate hiện tại: 19.65% (SLO: < 5%)",
+          "summary": "Error rate /ask vượt 5%"
+        },
+        "state": "firing",
+        "activeAt": "2026-11-25T12:15:07.401817116Z",
+        "value": "1.964705882352941e-01"
+      },
+      {
+        "labels": {
+          "alertname": "AgentHighLatencyP95",
+          "severity": "warning"
+        },
+        "annotations": {
+          "description": "p95 hiện tại: 1.892s (SLO: < 1s)",
+          "summary": "p95 latency /ask vượt 1 giây"
+        },
+        "state": "firing",
+        "activeAt": "2026-11-25T12:15:02.401817116Z",
+        "value": "1.891581632653061e+00"
+      },
+      {
+        "labels": {
+          "alertname": "LLMCostBurnRateHigh",
+          "severity": "warning"
+        },
+        "annotations": {
+          "description": "Tốc độ chi tiêu hiện tại: $4.25/giờ",
+          "summary": "Chi phí LLM đang vượt $2/giờ"
+        },
+        "state": "firing",
+        "activeAt": "2026-11-25T12:10:47.571501534Z",
+        "value": "4.2510740338986315e+00"
+      }
+    ],
+    "metrics": {
+      "captured_at": "2026-11-25T12:17:05.439611+00:00",
+      "p95_seconds": [
+        {
+          "metric": {},
+          "value": [
+            1795609025.442,
+            "1.891581632653061"
+          ]
+        }
+      ],
+      "avg_seconds": [
+        {
+          "metric": {},
+          "value": [
+            1795609025.454,
+            "0.5606385350235292"
+          ]
+        }
+      ],
+      "requests_per_instance": [
+        {
+          "metric": {
+            "instance": "172.18.0.4:8000"
+          },
+          "value": [
+            1795609025.47,
+            "7.618181818181818"
+          ]
+        },
+        {
+          "metric": {
+            "instance": "172.18.0.8:8000"
+          },
+          "value": [
+            1795609025.47,
+            "7.836363636363636"
+          ]
+        }
+      ],
+      "tokens_per_second": [
+        {
+          "metric": {
+            "type": "input"
+          },
+          "value": [
+            1795609025.486,
+            "1005.0363636363636"
+          ]
+        },
+        {
+          "metric": {
+            "type": "output"
+          },
+          "value": [
+            1795609025.486,
+            "545.3636363636363"
+          ]
+        }
+      ],
+      "errors": [
+        {
+          "metric": {},
+          "value": [
+            1795609025.489,
+            "0.1964705882352941"
+          ]
+        }
+      ]
+    }
+  },
+  "fault_load": {
+    "exit_code": 1,
+    "stats": [
+      {
+        "Type": "POST",
+        "Name": "/ask",
+        "Request Count": "4549",
+        "Failure Count": "998",
+        "Median Response Time": "200",
+        "Average Response Time": "577.359715240272",
+        "Min Response Time": "1.4749459999734427",
+        "Max Response Time": "1779.576182000028",
+        "Average Content Size": "347.34842822598375",
+        "Requests/s": "15.197271518871169",
+        "Failures/s": "3.3341123270682407",
+        "50%": "200",
+        "66%": "220",
+        "75%": "870",
+        "80%": "1700",
+        "90%": "1700",
+        "95%": "1700",
+        "98%": "1700",
+        "99%": "1700",
+        "99.9%": "1800",
+        "99.99%": "1800",
+        "100%": "1800"
+      },
+      {
+        "Type": "GET",
+        "Name": "/health",
+        "Request Count": "461",
+        "Failure Count": "2",
+        "Median Response Time": "3",
+        "Average Response Time": "3.2530462386098122",
+        "Min Response Time": "1.5982560000225021",
+        "Max Response Time": "34.20996300008028",
+        "Average Content Size": "80.33405639913232",
+        "Requests/s": "1.540105994767995",
+        "Failures/s": "0.006681587829796074",
+        "50%": "3",
+        "66%": "3",
+        "75%": "3",
+        "80%": "3",
+        "90%": "4",
+        "95%": "4",
+        "98%": "5",
+        "99%": "7",
+        "99.9%": "34",
+        "99.99%": "34",
+        "100%": "34"
+      },
+      {
+        "Type": "",
+        "Name": "Aggregated",
+        "Request Count": "5010",
+        "Failure Count": "1000",
+        "Median Response Time": "190",
+        "Average Response Time": "524.532734320159",
+        "Min Response Time": "1.4749459999734427",
+        "Max Response Time": "1779.576182000028",
+        "Average Content Size": "322.7788423153693",
+        "Requests/s": "16.737377513639164",
+        "Failures/s": "3.340793914898037",
+        "50%": "190",
+        "66%": "210",
+        "75%": "860",
+        "80%": "1700",
+        "90%": "1700",
+        "95%": "1700",
+        "98%": "1700",
+        "99%": "1700",
+        "99.9%": "1800",
+        "99.99%": "1800",
+        "100%": "1800"
+      }
+    ]
+  },
+  "slow_trace": {
+    "trace_id": "6516d868307869700fa582bd5abdd0c8",
+    "total_ms": 1767.101,
+    "llm_span": "chat mock-llm-small",
+    "llm_ms": 1693.959,
+    "llm_percent": 95.86,
+    "exception_events": []
+  },
+  "error_trace": {
+    "trace_id": "1c8c5e410041efabfb7f4f1708aa0327",
+    "total_ms": 111.631,
+    "llm_span": "chat mock-llm-small",
+    "llm_ms": 90.763,
+    "llm_percent": 81.31,
+    "exception_events": [
+      {
+        "timeUnixNano": "1795609181698216023",
+        "name": "exception",
+        "attributes": [
+          {
+            "key": "exception.escaped",
+            "value": {
+              "stringValue": "False"
+            }
+          },
+          {
+            "key": "exception.message",
+            "value": {
+              "stringValue": "Upstream LLM error: 503 Service Unavailable (mock)"
+            }
+          },
+          {
+            "key": "exception.stacktrace",
+            "value": {
+              "stringValue": "Traceback (most recent call last):\n  File \"/app/app/main.py\", line 153, in run_agent\n    result = await mock_llm.generate(question, context=context,\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/app/utils/mock_llm.py\", line 207, in generate\n    raise LLMError(\"Upstream LLM error: 503 Service Unavailable (mock)\")\nutils.mock_llm.LLMError: Upstream LLM error: 503 Service Unavailable (mock)\n"
+            }
+          },
+          {
+            "key": "exception.type",
+            "value": {
+              "stringValue": "utils.mock_llm.LLMError"
+            }
+          }
+        ]
+      },
+      {
+        "timeUnixNano": "1795609181698653133",
+        "name": "exception",
+        "attributes": [
+          {
+            "key": "exception.escaped",
+            "value": {
+              "stringValue": "False"
+            }
+          },
+          {
+            "key": "exception.message",
+            "value": {
+              "stringValue": "Upstream LLM error: 503 Service Unavailable (mock)"
+            }
+          },
+          {
+            "key": "exception.stacktrace",
+            "value": {
+              "stringValue": "Traceback (most recent call last):\n  File \"/home/agent/.local/lib/python3.11/site-packages/opentelemetry/trace/__init__.py\", line 602, in use_span\n    yield span\n  File \"/home/agent/.local/lib/python3.11/site-packages/opentelemetry/sdk/trace/__init__.py\", line 1136, in start_as_current_span\n    yield span\n  File \"/home/agent/.local/lib/python3.11/site-packages/opentelemetry/trace/__init__.py\", line 441, in start_as_current_span\n    yield span\n  File \"/app/app/main.py\", line 153, in run_agent\n    result = await mock_llm.generate(question, context=context,\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/app/utils/mock_llm.py\", line 207, in generate\n    raise LLMError(\"Upstream LLM error: 503 Service Unavailable (mock)\")\nutils.mock_llm.LLMError: Upstream LLM error: 503 Service Unavailable (mock)\n"
+            }
+          },
+          {
+            "key": "exception.type",
+            "value": {
+              "stringValue": "utils.mock_llm.LLMError"
+            }
+          }
+        ]
+      }
+    ],
+    "matching_log": {
+      "ts": "2026-11-25T12:19:41.698739+00:00",
+      "level": "INFO",
+      "service": "observable-agent",
+      "instance": "b92708ef86de",
+      "event": "llm_error",
+      "trace_id": "1c8c5e410041efabfb7f4f1708aa0327",
+      "span_id": "f582c36dd6aa622c",
+      "request_id": "0c5130104bbe",
+      "error": "Upstream LLM error: 503 Service Unavailable (mock)"
+    }
+  },
+  "completed_at": "2026-11-25T12:20:02.264150+00:00",
+  "availability_experiment": {
+    "change": "docker pause one agent",
+    "container": "k5-day14-observability-agent-2",
+    "changed_at": "2026-11-25T12:20:08.395268+00:00",
+    "poll_interval_seconds": 5,
+    "traffic_note": "Availability measured via Prometheus scraping; no new user load was added.",
+    "first_observed_firing_seconds": 40.3,
+    "alert": {
+      "labels": {
+        "alertname": "AgentInstanceDown",
+        "instance": "172.18.0.8:8000",
+        "job": "agent",
+        "severity": "critical"
+      },
+      "annotations": {
+        "description": "Prometheus không gọi được /metrics của 172.18.0.8:8000 trong 30s",
+        "summary": "Instance agent 172.18.0.8:8000 không scrape được"
+      },
+      "state": "firing",
+      "activeAt": "2026-11-25T12:20:17.401817116Z",
+      "value": "0e+00"
+    },
+    "restored_at": "2026-11-25T12:20:55.493803+00:00"
+  },
+  "scaling_completed_at": "2026-11-25T12:29:57.096067+00:00",
+  "scaling_note": "Final CSVs use --no-deps; replica counts verified before, during, and after both loads. Earlier default-replica runs were superseded."
+}

@@ -1,0 +1,170 @@
+{
+  "part1_develop": {
+    "method": "POST",
+    "path": "/ask?question=Hello",
+    "status": 200,
+    "body": {
+      "answer": "Đây là câu trả lời từ AI agent (mock). Trong production, đây sẽ là response từ OpenAI/Anthropic."
+    }
+  },
+  "part1_production": [
+    {
+      "method": "GET",
+      "path": "/health",
+      "status": 200,
+      "body": {
+        "status": "ok",
+        "uptime_seconds": 0.2,
+        "version": "1.0.0",
+        "environment": "staging",
+        "timestamp": "2026-11-25T07:19:06.913486+00:00"
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/ready",
+      "status": 200,
+      "body": {
+        "ready": true
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/ask",
+      "status": 200,
+      "body": {
+        "question": "Hello",
+        "answer": "Agent đang hoạt động tốt! (mock response) Hỏi thêm câu hỏi đi nhé.",
+        "model": "gpt-4o-mini"
+      }
+    }
+  ],
+  "part4_api_key": [
+    {
+      "authenticated": false,
+      "status": 401,
+      "body": {
+        "detail": "Missing API key. Include header: X-API-Key: <your-key>"
+      }
+    },
+    {
+      "authenticated": true,
+      "status": 200,
+      "body": {
+        "question": "Hello",
+        "answer": "Đây là câu trả lời từ AI agent (mock). Trong production, đây sẽ là response từ OpenAI/Anthropic."
+      }
+    }
+  ],
+  "part4_jwt": {
+    "without_token": 401,
+    "login_status": 200,
+    "authenticated_requests": [
+      {
+        "request": 1,
+        "status": 200
+      },
+      {
+        "request": 2,
+        "status": 200
+      },
+      {
+        "request": 3,
+        "status": 200
+      },
+      {
+        "request": 4,
+        "status": 200
+      },
+      {
+        "request": 5,
+        "status": 200
+      },
+      {
+        "request": 6,
+        "status": 200
+      },
+      {
+        "request": 7,
+        "status": 200
+      },
+      {
+        "request": 8,
+        "status": 200
+      },
+      {
+        "request": 9,
+        "status": 200
+      },
+      {
+        "request": 10,
+        "status": 200
+      },
+      {
+        "request": 11,
+        "status": 429,
+        "retry_after": "59",
+        "body": {
+          "detail": {
+            "error": "Rate limit exceeded",
+            "limit": 10,
+            "window_seconds": 60,
+            "retry_after_seconds": 59
+          }
+        }
+      },
+      {
+        "request": 12,
+        "status": 429,
+        "retry_after": "59",
+        "body": {
+          "detail": {
+            "error": "Rate limit exceeded",
+            "limit": 10,
+            "window_seconds": 60,
+            "retry_after_seconds": 59
+          }
+        }
+      },
+      {
+        "request": 13,
+        "status": 429,
+        "retry_after": "59",
+        "body": {
+          "detail": {
+            "error": "Rate limit exceeded",
+            "limit": 10,
+            "window_seconds": 60,
+            "retry_after_seconds": 59
+          }
+        }
+      },
+      {
+        "request": 14,
+        "status": 429,
+        "retry_after": "59",
+        "body": {
+          "detail": {
+            "error": "Rate limit exceeded",
+            "limit": 10,
+            "window_seconds": 60,
+            "retry_after_seconds": 59
+          }
+        }
+      },
+      {
+        "request": 15,
+        "status": 429,
+        "retry_after": "59",
+        "body": {
+          "detail": {
+            "error": "Rate limit exceeded",
+            "limit": 10,
+            "window_seconds": 60,
+            "retry_after_seconds": 59
+          }
+        }
+      }
+    ]
+  }
+}
